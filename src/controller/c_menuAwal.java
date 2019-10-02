@@ -22,6 +22,7 @@ public class c_menuAwal {
         theView.addBtnMasukListener(new MasukListener());
 //        theView.addBtnMasukListener(new );
 //        theView.addBtnMasukListener(new MasukListener);
+System.out.println("controller berfungsi");
     }
 
     private class MasukListener implements ActionListener {

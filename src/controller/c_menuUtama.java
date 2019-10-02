@@ -25,8 +25,6 @@ public class c_menuUtama {
     public c_menuUtama() {
         theView.setVisible(true);
         theView.addBtnAddMotorListener(new AddMotorListener());
-        theView.addBtnPeminjamListener(new PeminjamListener());
-        theView.addBtnPengembalianListener(new PengembalianListener());
         theView.addBtnAddUserListener(new AddUserListener());
         theView.addBtnKeluarListener(new KeluarListener());
     }

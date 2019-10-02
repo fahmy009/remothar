@@ -11,12 +11,6 @@ import java.sql.Statement;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.table.DefaultTableModel;
-import static model.m_peminjam.harga;
-import static model.m_peminjam.idmotorasli;
-import static model.m_peminjam.idmotorcoba;
-import static model.m_peminjam.merek;
-import static model.m_peminjam.nopol;
-import static model.m_peminjam.type;
 
 /**
  *
@@ -89,12 +83,12 @@ public void save(String idmotor, String nama, String alamat, String notelp, Stri
         Statement st = kon.getConnection().createStatement();
         ResultSet rs = st.executeQuery(sql);
         rs.next();
-        idmotorasli = rs.getString("Id_Motor");
+        String idmotorasli = rs.getString("Id_Motor");
 //        status = rs.getString("status");
-        harga = rs.getInt("harga");
-        merek = rs.getString("merek");
-        type = rs.getString("type");
-        nopol = rs.getString("nopol");
+        int harga = rs.getInt("harga");
+        String merek = rs.getString("merek");
+        String type = rs.getString("type");
+        String nopol = rs.getString("nopol");
     }
 
     public void coba(int id) throws SQLException {
@@ -102,7 +96,7 @@ public void save(String idmotor, String nama, String alamat, String notelp, Stri
         Statement st = kon.getConnection().createStatement();
         ResultSet rs = st.executeQuery(sql);
         rs.next();
-        idmotorcoba = rs.getString("Id_Motor");
+        String idmotorcoba = rs.getString("Id_Motor");
 
     }
 

@@ -5,6 +5,7 @@
  */
 package view;
 
+import controller.c_peminjamanpega;
 import java.awt.event.ActionListener;
 import java.awt.event.ItemListener;
 import javax.swing.JComboBox;
@@ -306,8 +307,6 @@ public class peminjampega extends javax.swing.JFrame {
         table = new javax.swing.JTable();
         jLabel12 = new javax.swing.JLabel();
         harga = new javax.swing.JTextField();
-        pinjaman = new com.toedter.calendar.JDateChooser();
-        kembali = new com.toedter.calendar.JDateChooser();
         jLabel13 = new javax.swing.JLabel();
         merek = new javax.swing.JTextField();
         jLabel14 = new javax.swing.JLabel();
@@ -639,20 +638,6 @@ public class peminjampega extends javax.swing.JFrame {
         });
         jPanel1.add(harga, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 280, 210, 20));
 
-        pinjaman.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
-            public void propertyChange(java.beans.PropertyChangeEvent evt) {
-                pinjamanPropertyChange(evt);
-            }
-        });
-        jPanel1.add(pinjaman, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 190, 140, -1));
-
-        kembali.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
-            public void propertyChange(java.beans.PropertyChangeEvent evt) {
-                kembaliPropertyChange(evt);
-            }
-        });
-        jPanel1.add(kembali, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 220, 140, -1));
-
         jLabel13.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(221, 79, 67));
         jLabel13.setText("Merek");
@@ -742,18 +727,9 @@ public class peminjampega extends javax.swing.JFrame {
 
     private void pinjamanPropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_pinjamanPropertyChange
         // TODO add your handling code here:
-        if (pinjaman.getDate() != null) {
-            SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
-            pinja = simpleDateFormat.format(pinjaman.getDate());
-        }
     }//GEN-LAST:event_pinjamanPropertyChange
 
     private void kembaliPropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_kembaliPropertyChange
-        // TODO add your handling code here:
-        if (kembali.getDate() != null) {
-            SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
-            kemba = simpleDateFormat.format(kembali.getDate());
-        }
     }//GEN-LAST:event_kembaliPropertyChange
 
     private void merekActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_merekActionPerformed
@@ -835,14 +811,12 @@ public class peminjampega extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel9;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JLabel keluar;
-    private com.toedter.calendar.JDateChooser kembali;
     private javax.swing.JTextField merek;
     private javax.swing.JLabel minimaze;
     private javax.swing.JTextField nama;
     private javax.swing.JTextField noktp;
     private javax.swing.JTextField nopol;
     private javax.swing.JTextField notelp;
-    private com.toedter.calendar.JDateChooser pinjaman;
     private javax.swing.JTable table;
     private javax.swing.JTextField type;
     // End of variables declaration//GEN-END:variables
@@ -850,4 +824,5 @@ public class peminjampega extends javax.swing.JFrame {
     public JTextField getHari() {
         return hari;
     }
+
 }

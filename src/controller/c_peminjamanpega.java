@@ -44,7 +44,6 @@ public class c_peminjamanpega {
 //        theview.addeditListener(new editListener());
 //        theview.addupdateListener(new updateListener());
         theview.addhapusListener(new hapusListener());
-        theview.addBtnMotorListener(new MotorListener());
 //        theview.addBtnUserListener(new UserListener());
         theview.addhitungListener(new hitungListener());
         theview.addBtnKeluarListener(new KeluarListener());

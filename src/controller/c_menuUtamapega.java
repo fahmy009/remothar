@@ -23,7 +23,6 @@ public class c_menuUtamapega {
 
     public c_menuUtamapega() {
         theView.setVisible(true);
-        theView.addBtnAddMotorListener(new c_menuUtamapega.AddMotorListener());
         theView.addBtnPeminjamListener(new c_menuUtamapega.PeminjamListener());
 //        theView.addBtnPengembalianListener(new c_menuUtamapega.PengembalianListener());
         theView.addBtnKeluarListener(new c_menuUtamapega.KeluarListener());

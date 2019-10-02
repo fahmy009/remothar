@@ -9,7 +9,6 @@ import controller.c_addmotor;
 import controller.c_adduser;
 import controller.c_login;
 import controller.c_menuAwal;
-import controller.c_peminjam;
 import java.sql.SQLException;
 import model.m_addmotor;
 import model.m_adduser;
